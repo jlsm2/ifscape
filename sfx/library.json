@@ -1,0 +1,800 @@
+{
+  "_sobre": "Sound effects library. 'mixkit': sound id on mixkit.co (commercial use without attribution, https://mixkit.co/license/#sfxFree). 'elevenlabs': text used to generate the sound with the Sound Effects API (commercial on the paid plan), stored in sfx/elevenlabs/. 'use' picks the source when an item has both (without 'use', Mixkit wins). IFSCAPE_SFX=mixkit forces Mixkit for everything, for comparison. 'el_peak' is the second of the peak in the ElevenLabs file. 'start' skips the start of the file; 'gain' is the base volume; 'peak' is the second of the file where the impact lands (cues align this point with the event); 'end' trims the tail of the file (preview fade-out), and cues longer than the clip loop with a crossfade.",
+  "city": {
+    "mixkit": 2678,
+    "title": "Urban city ambience at night",
+    "start": 3.0,
+    "gain": 1.0
+  },
+  "boom": {
+    "mixkit": 788,
+    "title": "Big cinematic impact",
+    "start": 1.6,
+    "peak": 2.1,
+    "gain": 1.0
+  },
+  "whoosh": {
+    "mixkit": 1492,
+    "title": "Cinematic whoosh fast transition",
+    "gain": 0.6
+  },
+  "wind": {
+    "mixkit": 2658,
+    "title": "Wind blowing ambience",
+    "start": 2.0,
+    "gain": 0.7
+  },
+  "stream": {
+    "mixkit": 2454,
+    "title": "River water flowing",
+    "start": 1.0,
+    "gain": 0.7
+  },
+  "forest": {
+    "mixkit": 1213,
+    "title": "European forest ambience",
+    "start": 2.0,
+    "gain": 0.6
+  },
+  "hit": {
+    "mixkit": 2918,
+    "title": "Epic movie trailer whoosh impact",
+    "peak": 3.0,
+    "gain": 0.9
+  },
+  "crash_a": {
+    "use": "elevenlabs",
+    "mixkit": 2980,
+    "title": "Factory metal hard hit",
+    "gain": 0.8,
+    "el_peak": 0.13,
+    "elevenlabs": "single car crashing into another parked car on an empty city street at night, metal crunch, glass shatter, short, distant reverb, no sirens, no voices",
+    "seconds": 2.0
+  },
+  "crash_b": {
+    "use": "elevenlabs",
+    "mixkit": 759,
+    "title": "Glass break with hammer thud",
+    "gain": 0.7,
+    "el_peak": 0.03,
+    "elevenlabs": "low speed car collision, heavy metal thud and bumper crunch, a little broken glass tinkling, empty quiet street, no voices",
+    "seconds": 1.6
+  },
+  "powerdown": {
+    "use": "elevenlabs",
+    "mixkit": 2594,
+    "title": "Electric buzz glitch",
+    "gain": 0.8,
+    "elevenlabs": "city power grid shutting down, electrical hum winding down, heavy relay clunk, lights going dark, short",
+    "seconds": 2.5
+  },
+  "flood": {
+    "use": "elevenlabs",
+    "mixkit": 1877,
+    "title": "Sink underwater drain",
+    "start": 6.0,
+    "gain": 0.8,
+    "elevenlabs": "water gushing and rising inside an underground subway tunnel, deep echo, bubbling and splashing",
+    "seconds": 5.0
+  },
+  "collapse": {
+    "use": "elevenlabs",
+    "mixkit": 2958,
+    "title": "Collapsing structure",
+    "peak": 1.5,
+    "gain": 1.0,
+    "elevenlabs": "asphalt road cracking and collapsing into a tunnel below, concrete crumbling, deep rumble, debris falling, cinematic",
+    "seconds": 4.0
+  },
+  "drone": {
+    "mixkit": 2510,
+    "title": "Cinematic suspense ambience",
+    "start": 4.0,
+    "end": 58.0,
+    "gain": 1.0
+  },
+  "hum": {
+    "use": "elevenlabs",
+    "gain": 10.0,
+    "_nota": "the generated file came out at -43 LUFS",
+    "elevenlabs": "empty city street at night with the power still on, steady electrical hum of streetlights and transformers, buzzing neon sign, distant air conditioning units, no traffic, no people, no voices, steady ambience",
+    "seconds": 20.0
+  },
+  "crack": {
+    "use": "elevenlabs",
+    "gain": 2.5,
+    "elevenlabs": "asphalt pavement slowly cracking and splitting open, dry concrete crackle and ice creaking, close, no music",
+    "seconds": 3.0
+  },
+  "tick": {
+    "use": "elevenlabs",
+    "mixkit": 1117,
+    "title": "Classic click",
+    "gain": 0.4,
+    "el_gain": 4.0,
+    "elevenlabs": "single soft digital counter tick, short clean click",
+    "seconds": 0.5
+  },
+  "farm_morning": {
+    "mixkit": 7,
+    "title": "Farm animals in the morning",
+    "start": 3.0,
+    "gain": 0.6
+  },
+  "barn": {
+    "mixkit": 1754,
+    "title": "Cow barn ambience",
+    "start": 3.75,
+    "end": 13.25,
+    "gain": 3.0
+  },
+  "moo_sick": {
+    "mixkit": 1752,
+    "title": "Cow sick moo",
+    "start": 0.05,
+    "gain": 0.5
+  },
+  "cow_eating": {
+    "mixkit": 1767,
+    "title": "Cow eating close",
+    "start": 1.0,
+    "gain": 1.5
+  },
+  "sparkle_poof": {
+    "mixkit": 3082,
+    "title": "Magic sparkle poof hit",
+    "peak": 0.09,
+    "gain": 0.6
+  },
+  "light_sweep": {
+    "mixkit": 2586,
+    "title": "Magical light sweep",
+    "start": 0.6,
+    "peak": 1.54,
+    "gain": 1.5
+  },
+  "bubble": {
+    "mixkit": 3000,
+    "title": "Liquid bubble",
+    "peak": 0.04,
+    "gain": 0.4
+  },
+  "crickets": {
+    "mixkit": 39,
+    "title": "Crickets and insects in the wild ambience",
+    "gain": 2.0
+  },
+  "factory_hum": {
+    "mixkit": 2504,
+    "title": "Industrial machine hum",
+    "gain": 0.3
+  },
+  "wind_top": {
+    "mixkit": 1267,
+    "title": "Wind in the top of the mountain",
+    "gain": 0.8
+  },
+  "sea_far": {
+    "mixkit": 1191,
+    "title": "Distant sea humming ambiance",
+    "gain": 0.6
+  },
+  "vacuum_swoosh": {
+    "mixkit": 1465,
+    "title": "Vacuum swoosh transition",
+    "start": 0.9,
+    "peak": 1.57,
+    "gain": 0.6
+  },
+  "underwater": {
+    "mixkit": 1205,
+    "title": "Diving sea ambience",
+    "start": 0.5,
+    "gain": 1.6
+  },
+  "heartbeat": {
+    "mixkit": 490,
+    "title": "Human single heart beat",
+    "peak": 0.04,
+    "gain": 0.5
+  },
+  "shimmer": {
+    "use": "elevenlabs",
+    "gain": 3.0,
+    "elevenlabs": "faint continuous shimmer of countless tiny glowing particles drifting in still morning air, soft airy crystalline sparkle texture, steady, no melody, no chimes, no music",
+    "seconds": 7.0
+  },
+  "flies": {
+    "use": "elevenlabs",
+    "gain": 2.5,
+    "elevenlabs": "a few houseflies buzzing lazily around a manure heap outdoors, close, quiet farmyard, steady, no voices, no music",
+    "seconds": 6.0
+  },
+  "plop": {
+    "use": "elevenlabs",
+    "gain": 3.0,
+    "el_peak": 0.01,
+    "elevenlabs": "single soft wet plop of manure landing on a pile, short squelch, close, outdoors, no music",
+    "seconds": 1.0
+  },
+  "rumble": {
+    "mixkit": 1296,
+    "title": "Thunder deep rumble",
+    "start": 0.0,
+    "end": 16.0,
+    "gain": 1.0
+  },
+  "car_pass": {
+    "mixkit": 1538,
+    "title": "Fast car drive by",
+    "start": 0.7,
+    "peak": 1.22,
+    "gain": 1.0
+  },
+  "step": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.02,
+    "elevenlabs": "single heavy footstep of a giant long-necked dinosaur on dry packed earth, deep low thud with a faint ground rumble, distant, no animal voice, no music",
+    "seconds": 1.2
+  },
+  "walkers": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a small group of people walking slowly through tall dry grass, soft footsteps and light rustling, outdoors in the morning, steady, no voices, no music",
+    "seconds": 6.0
+  },
+  "scurry": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "tiny rodent scurrying through dry ferns, light fast rustling and pattering, close, outdoors, short, no voice, no music",
+    "seconds": 2.5
+  },
+  "road_steps": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a few people walking slowly on an empty paved street in daylight, soft footsteps and the rustle of heavy cloth sacks, steady, no voices, no music",
+    "seconds": 5.0
+  },
+  "hooves": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a single horse led by its reins walking slowly on an empty paved street, steady hoof clops, close, quiet outdoors, no voices, no music",
+    "seconds": 4.0
+  },
+  "cart": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a horse pulling a wooden cart slowly along a dirt road, soft hoofbeats and creaking wooden wheels, outdoors, no voices, no music",
+    "seconds": 4.0
+  },
+  "digging": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "people digging soil with hoes and shovels in a vegetable garden, rhythmic dull chops and soft earth scrapes, outdoors, steady, no voices, no music",
+    "seconds": 5.0
+  },
+  "flint": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.01,
+    "elevenlabs": "flint stone striking the back of a steel knife, one short sharp metallic scrape and clink, close, quiet night outdoors, no music",
+    "seconds": 1.0
+  },
+  "fire": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a small campfire of dry grass and sticks catching and burning, soft crackling, close, quiet night outdoors, steady, no music",
+    "seconds": 5.0
+  },
+  "click_low": {
+    "use": "elevenlabs",
+    "gain": 0.15,
+    "el_peak": 0.02,
+    "elevenlabs": "a single deep dark low thud click like a heavy power switch being thrown, sub bass, very short, dry, then immediate silence, no music, no voices",
+    "seconds": 1.0
+  },
+  "baby_soft": {
+    "use": "elevenlabs",
+    "gain": 0.2,
+    "el_peak": 0.1,
+    "elevenlabs": "a newborn baby making one soft quiet short whimper and coo, close, gentle, indoors, no music, no adult voices",
+    "seconds": 1.5
+  },
+  "village_murmur": {
+    "use": "elevenlabs",
+    "gain": 12.0,
+    "elevenlabs": "distant murmur of a small village at dusk, indistinct soft crowd chatter far away with no intelligible words, a few hens clucking, steady outdoor ambience, no music",
+    "seconds": 8.0
+  },
+  "glass_note": {
+    "use": "elevenlabs",
+    "gain": 0.4,
+    "el_peak": 0.02,
+    "elevenlabs": "a single soft clear glass bell note struck gently, pure tone with a long warm decay, close, no music, no melody",
+    "seconds": 1.5
+  },
+  "tone_fall": {
+    "use": "elevenlabs",
+    "gain": 0.08,
+    "el_peak": 0.0,
+    "elevenlabs": "a warm low sine tone slowly sliding down in pitch and fading to silence, soft and ethereal, single tone, no melody, no music",
+    "seconds": 3.0
+  },
+  "pier_waves": {
+    "mixkit": 1195,
+    "title": "Close sea waves loop",
+    "start": 0.6,
+    "gain": 0.34,
+    "_nota": "moon-disappeared: calm waves at the pier, the video's bed (effective target -29 LUFS with cue gain 1.0)"
+  },
+  "boat_motor": {
+    "mixkit": 3078,
+    "title": "Light ship engine flutter whosh by",
+    "start": 0.4,
+    "gain": 0.33,
+    "_nota": "moon-disappeared 07: engine moving away; 7 s file that fades out in ~4 s; use with a cue of up to ~6.5 s (do not repeat)"
+  },
+  "gulls": {
+    "use": "elevenlabs",
+    "gain": 0.26,
+    "_nota": "moon-disappeared 07: no single hit (scattered screams), no el_peak",
+    "elevenlabs": "a few seagulls calling at dawn over a calm harbor, distant, sparse, no music",
+    "seconds": 4.0
+  },
+  "wood_tick": {
+    "use": "elevenlabs",
+    "mixkit": 3076,
+    "title": "Ship hull creak",
+    "gain": 1.6,
+    "_nota": "moon-disappeared 05: sparse crackles with no single hit, no el_peak; gain calibrated for cue gain 1.0 (effective -34 LUFS)",
+    "elevenlabs": "dry wooden pier planks slowly creaking and ticking as they dry, sparse, quiet, close, no music",
+    "seconds": 3.0
+  },
+  "leaves_breeze": {
+    "mixkit": 2427,
+    "title": "Breeze through the trees",
+    "gain": 0.19,
+    "_nota": "plants-extinct 01-02: green leaf in the wind (14 s file, loops with crossfade)"
+  },
+  "dry_leaves_wind": {
+    "use": "elevenlabs",
+    "gain": 1.66,
+    "_nota": "plants-extinct 03-12: dry leaf and straw in the wind, no single hit",
+    "elevenlabs": "dry brown leaves and dry straw grass rustling and hissing in a steady light breeze, papery crackle, outdoors on a hillside, no birds, no voices, no music, steady ambience",
+    "seconds": 10.0
+  },
+  "grain_handful": {
+    "use": "elevenlabs",
+    "gain": 1.65,
+    "_nota": "plants-extinct 07: hand takes a handful out of the sack",
+    "elevenlabs": "a hand scooping a handful of dry wheat grain from an open burlap sack, grain trickling through fingers, short, close, quiet, no music",
+    "seconds": 1.5
+  },
+  "soil_press": {
+    "use": "elevenlabs",
+    "gain": 10.0,
+    "el_peak": 1.0,
+    "_nota": "plants-extinct 07: hand buries the grain and presses the soil",
+    "elevenlabs": "a hand covering seeds in a garden furrow and pressing and patting loose dry soil, soft earthy scrape and pat, close, quiet outdoors, no music",
+    "seconds": 2.0
+  },
+  "wet_fish_crate": {
+    "use": "elevenlabs",
+    "gain": 10.0,
+    "_nota": "plants-extinct 09: fish on a wet cloth, low, no ice",
+    "elevenlabs": "a small wooden crate with a few fish lying on wet cloth, soft wet slap and squelch of fish shifting on damp cloth, faint wood creak, close, quiet outdoors, no gulls, no voices, no music",
+    "seconds": 3.0
+  },
+  "branch_snap": {
+    "use": "elevenlabs",
+    "gain": 0.5,
+    "el_peak": 0.28,
+    "_nota": "plants-extinct 10: branch snaps at the joint, followed by a wood groan",
+    "elevenlabs": "a large dry tree branch cracking sharply and splitting at its joint, one loud wooden crack then a short groan of fibers, close, outdoors, no music",
+    "seconds": 1.5
+  },
+  "branch_thud": {
+    "use": "elevenlabs",
+    "gain": 0.5,
+    "el_peak": 0.01,
+    "_nota": "plants-extinct 10: heavy branch on dry ground, bounce and dust",
+    "elevenlabs": "a heavy dry tree branch landing on hard dry ground with a deep thud and a small bounce, then twigs and dust settling, outdoors, no music",
+    "seconds": 2.0
+  },
+  "birds_small": {
+    "mixkit": 17,
+    "title": "Little birds singing in the trees",
+    "gain": 0.56,
+    "_nota": "plants-extinct 01-02 and 12: little birds of the living world (8 s file, loops with crossfade)"
+  },
+  "sneeze": {
+    "mixkit": 2212,
+    "title": "Adult sneeze",
+    "start": 0.5,
+    "peak": 0.53,
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 01: only the 'choo' (skips the 'ah-ah' from 0.08 to 0.48 s); the hit lands 0.03 s after the start of the clip"
+  },
+  "sneeze_hold": {
+    "mixkit": 2212,
+    "title": "Adult sneeze",
+    "start": 0.08,
+    "end": 0.48,
+    "gain": 0.5,
+    "_nota": "viruses-disappeared 03: only the 'ah-ah' wind-up, without the hit: the sneeze that never comes"
+  },
+  "whoosh_jump": {
+    "mixkit": 1492,
+    "title": "Cinematic whoosh fast transition",
+    "peak": 1.08,
+    "gain": 0.6,
+    "_nota": "viruses-disappeared: time and place jumps; 'at' = frame of the transition, the peak (1.08 s) lands on it and the ~0.7 s rise comes before"
+  },
+  "savanna_wind": {
+    "mixkit": 1166,
+    "title": "Meadow wind light",
+    "start": 1.0,
+    "end": 18.5,
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 11-12: light wind in an open field, stable 17.5 s stretch (23.8 s file, -32 LUFS)"
+  },
+  "frass_patter": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 08-09: caterpillar droppings falling on leaves, like a weak drizzle; no single hit",
+    "elevenlabs": "caterpillar droppings, tiny dry pellets falling and pattering onto oak leaves like a very light drizzle, sparse irregular ticks, close, outdoors, no voices, no music",
+    "seconds": 5.0
+  },
+  "lens_open": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.14,
+    "_nota": "viruses-disappeared 02, 04, 05, 07: lens opening (and, lower, closing)",
+    "elevenlabs": "a soft airy whoosh swelling up with a faint glass shimmer, like a magnifying glass lens opening, gentle, short, no voices, no music",
+    "seconds": 1.5
+  },
+  "o2_bubbles": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 07: tiny bubbles rising in the diatoms; continuous texture, no hit",
+    "elevenlabs": "tiny fine bubbles rising and gently popping in water, many very small light fizzy bubbles, underwater, close, steady, no voices, no music",
+    "seconds": 4.0
+  },
+  "leaf_munch": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 09: four bites on the edge of the leaf, ~0.2 s between them",
+    "elevenlabs": "a caterpillar chewing a fresh green leaf, a few tiny crisp bites about every fifth of a second, very close, quiet, no voices, no music",
+    "seconds": 2.0
+  },
+  "promenade_murmur": {
+    "use": "elevenlabs",
+    "gain": 7.0,
+    "_nota": "viruses-disappeared 06: family laughing on the sidewalk, far away, no words",
+    "elevenlabs": "distant soft murmur of a few relaxed people strolling on a seaside promenade, indistinct low chatter and one light laugh, no intelligible words, steady, outdoors, no music",
+    "seconds": 4.0
+  },
+  "wildebeest_herd": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "viruses-disappeared 11-12: herd grazing; grows with the number of animals through the cue",
+    "elevenlabs": "a herd of wildebeest grazing on open dry savanna, soft low nasal grunts, tearing of grass, light shuffling hooves, a little wind, steady, distant, no voices, no music",
+    "seconds": 7.5
+  },
+  "wildebeest_snort": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.2,
+    "_nota": "viruses-disappeared 12: wildebeest snort in the final pause",
+    "elevenlabs": "a single short snort of a wildebeest, nasal exhale with a low grunt, close, outdoors, quiet savanna, no music",
+    "seconds": 1.2
+  },
+  "chicken": {
+    "use": "elevenlabs",
+    "title": "Hen clucking",
+    "gain": 1.0,
+    "el_peak": 0.15,
+    "elevenlabs": "a single hen clucking three times, close up, outdoors on a farm, dry and clear, no background noise, no other animals, no voices",
+    "seconds": 3.0
+  },
+  "rod_cast": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "fishing rod cast from a wooden pier: quick whip swish of the rod, thin line whirring out, then a tiny plop of a bobber landing on calm water, close, outdoors, no music, no voice",
+    "seconds": 2.5
+  },
+  "rod_bite": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "fishing bobber suddenly pulled under with a tiny splash, rod tip creaking tight, then the line going slack with a soft flutter, close, quiet, no music, no voice",
+    "seconds": 2.5
+  },
+  "mug_drink": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a tin mug dipped into a metal bucket of water with a soft splash, then a man swallowing two gulps and a short exhale, close, outdoors, no music, no speech",
+    "seconds": 3.0
+  },
+  "pier_steps": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "one person walking slowly away on wooden pier planks, steady hollow soft footsteps with faint plank creaks, calm night, no voice, no music",
+    "seconds": 6.0
+  },
+  "ice_creak": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a bay freezing over: long low groans and soft crackles of thin ice forming and settling, distant, eerie but calm, no music, no voice",
+    "seconds": 5.0
+  },
+  "ice_auger": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a hand ice auger drilling a fishing hole through thick ice, slow rhythmic grinding crank and crunching ice chips, then a final soft break-through, close, no music, no voice",
+    "seconds": 4.0
+  },
+  "gull_splash": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a seagull plunge-diving into calm sea, a quick splash and wings flapping away, then one distant gull cry, outdoors, no music",
+    "seconds": 2.5
+  },
+  "ant_swell": {
+    "use": "elevenlabs",
+    "gain": 4.0,
+    "el_peak": 2.3,
+    "_nota": "ants-human-size 01: growth; low swell rising with dry chitin crackles",
+    "elevenlabs": "a deep low rumbling swell slowly rising, with dry creaking and crackling of a huge insect shell expanding, grass rustling, no voices, no music, no animal cry",
+    "seconds": 4.0
+  },
+  "chitin_creak": {
+    "use": "elevenlabs",
+    "gain": 0.6,
+    "_nota": "ants-human-size 01/03: dry exoskeleton creaks, no single hit",
+    "elevenlabs": "slow dry creaking and squeaking of a large hard shell under strain, a few spaced creaks and one small crackle, close, outdoors, no voices, no music, no animal cry",
+    "seconds": 3.0
+  },
+  "ant_step": {
+    "use": "elevenlabs",
+    "gain": 0.8,
+    "el_peak": 0.02,
+    "_nota": "ants-human-size 01/03/05: one heavy step of a giant ant leg on grass",
+    "elevenlabs": "one heavy slow footstep of a giant insect leg on soft meadow grass and soil, deep dull thud with a faint dry crunch, no voices, no music, no animal cry",
+    "seconds": 1.2
+  },
+  "ant_sag": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.02,
+    "_nota": "ants-human-size 03: legs give way and the heavy body lands on the grass; sub-bass, abdomen rebound",
+    "elevenlabs": "a huge heavy body collapsing onto soft meadow grass, a dry shell crack, a deep sub bass thud, then a smaller softer second thud as it bounces and settles, grass rustle, no voices, no music, no animal cry",
+    "seconds": 3.0
+  },
+  "leg_tremble": {
+    "use": "elevenlabs",
+    "gain": 2.5,
+    "_nota": "ants-human-size 03: legs trembling under weight; thin, irregular creak, no hit",
+    "elevenlabs": "thin dry shell and joints trembling and rattling under heavy strain, fast tiny irregular creaks and a faint low groan, close, no voices, no music, no animal cry",
+    "seconds": 3.0
+  },
+  "park_steps": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "ants-human-size 07: woman walking on the park's stone path, far away",
+    "elevenlabs": "one woman walking slowly on a stone path in a quiet park, soft steady footsteps on pavers, a little distance, light breeze, no voices, no music",
+    "seconds": 5.0
+  },
+  "park_walla": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "_nota": "ants-human-size v2 01-02, 06: distant chatter of people in the park, no words",
+    "elevenlabs": "distant ambience of a city park in the afternoon, a few people chatting far away with indistinct low voices and one soft laugh, light footsteps on gravel, no intelligible words, steady, outdoors, no music",
+    "seconds": 12.0
+  },
+  "ant_patter": {
+    "use": "elevenlabs",
+    "gain": 2.5,
+    "_nota": "ants-human-size v2 01 and 08: tiny feet of small ants on grass and crumbs, macro",
+    "elevenlabs": "many tiny insect feet pattering and scurrying over dry grass blades and small crumbs, very light fast rustling ticks, extreme close macro microphone, steady, no voices, no music",
+    "seconds": 4.0
+  },
+  "witness_cloth": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "el_peak": 0.5,
+    "_nota": "ants-human-size v2: seated witness recoils in fright, fabric and a short intake of breath",
+    "elevenlabs": "a person sitting on a picnic blanket shifting back suddenly, a quick rustle of jacket fabric and one short sharp breath in, close, no speech, no music",
+    "seconds": 2.0
+  },
+  "zb_counter_knock": {
+    "use": "elevenlabs",
+    "gain": 0.8,
+    "elevenlabs": "one knuckle knock on a wooden pharmacy counter, dry, close, quiet room, then silence, no music, no voices",
+    "seconds": 0.6,
+    "el_peak": 0.04
+  },
+  "zb_door_knock": {
+    "use": "elevenlabs",
+    "gain": 0.8,
+    "elevenlabs": "one heavy fist knock on a solid wooden door heard from inside a quiet shop, dull and ominous, then silence, no music, no voices",
+    "seconds": 0.8,
+    "el_peak": 0.07
+  },
+  "zb_cup_set": {
+    "use": "elevenlabs",
+    "gain": 3.0,
+    "elevenlabs": "a small paper cup set down on a wooden counter, soft tap, quiet indoor room, no voices",
+    "seconds": 0.6,
+    "el_peak": 0.06
+  },
+  "zb_keys_drop": {
+    "use": "elevenlabs",
+    "gain": 0.8,
+    "elevenlabs": "a ring of metal keys slipping and falling onto a tile floor, jingle, clear, close, then silence, no voices",
+    "seconds": 1.2,
+    "el_peak": 0.1
+  },
+  "zb_keys_jingle": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a ring of metal keys snatched up and jingling in one hand, small bright tinkle, close, indoor, then silence, no voices",
+    "seconds": 1.2,
+    "el_peak": 0.1
+  },
+  "zb_door_lock": {
+    "use": "elevenlabs",
+    "gain": 0.5,
+    "elevenlabs": "a heavy glass shop door pushed shut then a metal deadbolt turning and clicking, close, indoor, then silence, no voices",
+    "seconds": 1.5,
+    "el_peak": 0.62
+  },
+  "zb_shop_bell": {
+    "use": "elevenlabs",
+    "gain": 0.5,
+    "elevenlabs": "a small brass shop door bell chiming once, bright, indoor, quiet, no voices",
+    "seconds": 1.5,
+    "el_peak": 0.0
+  },
+  "zb_siren_far": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a single police siren very far away across a small town at dusk, faint, wailing slowly, no voices, no music",
+    "seconds": 4.0
+  },
+  "zb_glass_far": {
+    "use": "elevenlabs",
+    "gain": 0.3,
+    "elevenlabs": "a window glass shattering far away down a street at night, distant, small, then silence, no voices",
+    "seconds": 1.5,
+    "el_peak": 0.0
+  },
+  "zb_window_shut": {
+    "use": "elevenlabs",
+    "gain": 0.7,
+    "elevenlabs": "a wooden sash window slid shut and its latch turned, indoor, close, no voices",
+    "seconds": 0.8,
+    "el_peak": 0.27
+  },
+  "zb_street_walla": {
+    "use": "elevenlabs",
+    "gain": 3.0,
+    "seconds": 10.0,
+    "elevenlabs": "distant murmur of a few people chatting on a small town main street at dusk, soft footsteps, a car passing far away, relaxed, no clear words, no music"
+  },
+  "zb_glass_drag": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a bandaged hand dragging slowly down a window glass pane from outside, soft muffled cloth drag with one faint squeak, heard from inside a quiet shop, then silence, no voices, no music",
+    "seconds": 1.5,
+    "el_peak": 0.15
+  },
+  "zb_tap_turn": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "an old metal water tap handle being turned on above a sink, one squeaky twist and a dull pipe rattle, indoor, close, then silence, no voices, no music",
+    "seconds": 1.0,
+    "el_peak": 0.3
+  },
+  "tap_air": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a dry water faucet coughing once, a short sputter of air and a wet gurgle out of the pipe, then silence, indoor, close, no voices, no music",
+    "seconds": 1.5,
+    "el_peak": 0.05
+  },
+  "gd_buckle": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a person's knees suddenly giving way under heavy weight, shoes scuffing on stone, a hand slapping and gripping a metal railing, one sharp short breath out, close, outdoors, no speech, no music",
+    "seconds": 2.0,
+    "_nota": "gravity-doubled: knees give way; shoe scrape 0-0.25 s and hit at 0.76 s (measured, RMS -17 dB)",
+    "el_peak": 0.76
+  },
+  "gd_cup_break": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a ceramic coffee cup falling and shattering on stone paving, one sharp crack and scattering shards, a little liquid splash, outdoors, close, no voices, no music",
+    "seconds": 1.5,
+    "_nota": "gravity-doubled 03: cup breaks, attack at 0.0 s, short tail (measured)",
+    "el_peak": 0.02
+  },
+  "gd_steel_groan": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "a steel footbridge deck flexing under sudden load, a low metallic groan with creaking joints and one faint cable twang, outdoors by a river, no voices, no music",
+    "seconds": 3.0,
+    "_nota": "gravity-doubled 02/04: deck groan, rises in 0.2 s, plateau until 1.6 s, fades out by 3 s; no hit, starts at the beginning of the gesture"
+  },
+  "gd_cable_hum": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "elevenlabs": "taut steel bridge cables humming and faintly singing, thin low metallic vibration with tiny ticks, distant, outdoors, steady, no voices, no music",
+    "seconds": 4.0,
+    "_nota": "gravity-doubled 04: hum of taut cables, stable texture -38 dB, loops with crossfade"
+  },
+  "zb_metal_scrape": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 2.5,
+    "elevenlabs": "a heavy sheet of metal dragged slowly across rough asphalt far down a narrow alley at night, low grinding scrape with a dull thud at the end, distant, echoing between brick walls, no voices, no music"
+  },
+  "zb_whisper_breath": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 1.5,
+    "elevenlabs": "a low airy breath of wind through a narrow dark gap, soft hollow exhale like a faint hiss, eerie, close, no words, no voice, no music"
+  },
+  "zb_back_door": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 1.5,
+    "elevenlabs": "a heavy metal back door of a shop pushed open with a long dry hinge creak and a soft latch click, indoors then outdoors, quiet night, no voices, no music"
+  },
+  "zb_whisper_voice": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 1.6,
+    "elevenlabs": "whispered voice saying Sam (TTS, voice pqHfZKP75CvOlQylNhV4)"
+  },
+  "zb_shuffle": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 4.0,
+    "elevenlabs": "a person shuffling slowly on rough asphalt dragging one foot, uneven slow scuffing steps with a soft cloth rustle, narrow alley at night, a few meters away, quiet, no voices, no music"
+  },
+  "zb_jugs": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 3.0,
+    "elevenlabs": "two plastic water jugs lifted one after another off a wooden pallet, hollow plastic thunks and water sloshing inside, close, quiet alley at night, no voices, no music",
+    "el_peak": 0.16
+  },
+  "zb_door_rattle": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 1.0,
+    "elevenlabs": "a heavy steel back door shuddering and rattling in its frame right after one hard fist knock, short metallic chatter of a loose latch and hinges, heard from inside a quiet shop, then silence, no voices, no music"
+  },
+  "zb_light_buzz": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 2.0,
+    "elevenlabs": "a failing fluorescent tube light buzzing and stuttering, thin electrical hum with two or three brief flickers, close, indoor, quiet room, no voices, no music"
+  },
+  "zb_drip": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 0.8,
+    "elevenlabs": "a single water drop falling from a faucet tip into an empty metal sink basin, one small hollow plink, quiet dark room, then silence, no voices, no music",
+    "el_peak": 0.02
+  },
+  "zb_flashlight_click": {
+    "use": "elevenlabs",
+    "gain": 1.0,
+    "seconds": 0.5,
+    "el_peak": 0.02,
+    "elevenlabs": "a small plastic headlamp flashlight switch clicked once, crisp tiny click, close, quiet room, then silence, no voices, no music",
+    "_nota": "Part 4 v3: Sam's headlamp goes off (09) and on (11)"
+  }
+}

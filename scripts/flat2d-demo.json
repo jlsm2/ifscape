@@ -1,0 +1,159 @@
+{
+  "_nota": "Example of the 2D system (tools/flat2d): plan, card, Sam close-up, Rosa speaking close-up, Sam and Hale duo, bus stop wide with bite and turn, and pharmacy wide with Hale hitting the counter. Voice, karaoke captions and no panel. Test: py -m ifscape all scripts/flat2d-demo.json --dummy",
+  "slug": "flat2d-demo",
+  "channel": "zombie",
+  "title": "Flat 2D demo",
+  "description": "Demo of the flat 2D pipeline (not for posting).",
+  "hashtags": [],
+  "sources": [
+    {"claim": "02: rabies incubation is usually weeks to months after the bite", "url": "https://www.who.int/news-room/fact-sheets/detail/rabies"}
+  ],
+  "format": "voice",
+  "caption_style": "karaoke",
+  "panel": false,
+  "closing": "Open it, or wait?",
+  "cast": {
+    "sam": {"name": "SAM", "accessory": "headlamp"},
+    "rosa": {"name": "ROSA", "skin": "#c08a62", "hair": {"color": "#22170f", "style": "long"}, "shirt": "teal", "accessory": "scarf", "marker": "#6fd0c0"},
+    "hale": {"name": "HALE", "skin": "#e2b894", "hair": {"style": "grey"}, "shirt": "navy", "coat": true, "accessory": "glasses", "marker": "#e8ecf2"},
+    "man": {"name": "MAN", "skin": "#8f5f44", "hair": {"color": "#1b1714", "style": "bald"}, "shirt": "olive", "accessory": "bandage", "marker": "#c9b46a"}
+  },
+  "scenes": [
+    {
+      "id": "01",
+      "narration": "Six forty, and the pharmacy is still open. The street lights are just coming on. I'm in the back aisle when the first one walks out of the fog on Main Street. Then three more. They spread across the road like heat on a camera, and nobody else is looking. So I run for the front door, and I lock it.",
+      "clock": {"day": 0, "from": "18:40", "to": "18:41"},
+      "chip": {"label": "EXITS", "value": "2 DOORS", "word": "aisle", "for": 3.0},
+      "flat": {
+        "shot": "plan",
+        "place": "pharmacy",
+        "actors": [
+          {"id": "sam", "kind": "sam", "at": "aisle"},
+          {"id": "clerk", "kind": "people", "at": "counter"}
+        ],
+        "doors": {"front": "open"},
+        "infected": 0,
+        "camera": {"zoom": [1.0, 1.12], "focus": ["center", "door"]},
+        "events": [
+          {"word": "first", "do": "heat", "count": 1, "for": 1.0},
+          {"word": "three", "do": "heat", "count": 4, "for": 1.2},
+          {"word": "spread", "do": "heat", "count": 9, "for": 3.0},
+          {"word": "spread", "do": "move", "who": "infected", "to": "street_near", "for": 4.0},
+          {"word": "looking.", "do": "move", "who": "clerk", "to": "back"},
+          {"word": "run", "do": "move", "who": "sam", "to": "door"},
+          {"word": "lock", "do": "door", "state": "locked"}
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "narration": "Rabies takes weeks to reach the brain, so a bite still gives doctors time to act. Whatever is out there takes minutes. That is why nobody on the street understood what they were seeing until it was far too late.",
+      "flat": {
+        "shot": "card",
+        "blocks": [
+          {"label": "RABIES", "value": "WEEKS", "note": "bite to brain", "word": "rabies", "source": "WHO rabies fact sheet"},
+          {"label": "HARLOW", "value": "MINUTES", "note": "bite to turning", "hot": true, "word": "whatever"}
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "narration": "Now it is quiet inside. My headlamp is the only light left. Then someone knocks on the glass, three times, slow. A shape stands behind the door, and it is not moving.",
+      "clock": {"day": 0, "from": "18:52", "to": "18:53"},
+      "chip": {"label": "BATTERY", "value": "40%", "level": 0.4, "word": "headlamp", "for": 3.0},
+      "flat": {
+        "shot": "close",
+        "expr": "calm",
+        "light": "on",
+        "events": [
+          {"word": "left.", "do": "light", "state": "flicker"},
+          {"word": "knocks", "do": "knock", "times": 3, "gap": 0.45},
+          {"word": "knocks", "do": "expr", "to": "alert", "offset": 0.2},
+          {"word": "shape", "do": "appear", "for": 1.2},
+          {"word": "moving.", "do": "expr", "to": "scared"}
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "narration": "Rosa grabs my sleeve and whispers, \"Do not open that door, Sam. Not for anyone.\" Her voice is steady, but her eyes are not.",
+      "clock": {"day": 0, "from": "18:54", "to": "18:54"},
+      "flat": {
+        "shot": "close",
+        "who": "rosa",
+        "bg": "door",
+        "expr": "alert",
+        "events": [
+          {"word": "do", "do": "expr", "to": "whisper", "offset": -0.2},
+          {"word": "do", "do": "talk", "who": "rosa", "until_word": "anyone"},
+          {"word": "steady,", "do": "expr", "to": "scared"},
+          {"word": "eyes", "do": "light", "state": "flicker"}
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "narration": "Doctor Hale leans over the counter. \"Show me your hand,\" he says. I pull it back, and he grabs my arm before I can hide the bandage.",
+      "flat": {
+        "shot": "duo",
+        "who": ["sam", "hale"],
+        "bg": "shelves",
+        "counter": true,
+        "expr": {"sam": "alert", "hale": "calm"},
+        "events": [
+          {"word": "show", "do": "talk", "who": "hale", "until_word": "says."},
+          {"word": "show", "do": "expr", "who": "hale", "to": "alert"},
+          {"word": "pull", "do": "recoil", "who": "sam"},
+          {"word": "pull", "do": "expr", "who": "sam", "to": "scared"},
+          {"word": "grabs", "do": "grab", "who": "hale", "target": "sam", "for": 2.0},
+          {"word": "bandage.", "do": "hand", "who": "sam", "offset": -0.4, "for": 1.6}
+        ]
+      }
+    },
+    {
+      "id": "06",
+      "narration": "Across the street, at the bus stop, the man with the bandaged hand starts to shake. Rosa steps out to help him. Then he turns, and he lunges at her shoulder.",
+      "clock": {"day": 0, "from": "18:58", "to": "18:59"},
+      "flat": {
+        "shot": "wide",
+        "set": "busstop",
+        "infected": 2,
+        "actors": [
+          {"id": "man", "at": "shelter", "facing": "left", "expr": "sick"},
+          {"id": "rosa", "at": "pharmacy_door", "facing": "right"}
+        ],
+        "events": [
+          {"word": "shake.", "do": "hand", "who": "man", "for": 1.2},
+          {"word": "steps", "do": "walk", "who": "rosa", "to": [600, 1240]},
+          {"word": "help", "do": "talk", "who": "rosa", "for": 0.8},
+          {"word": "turns,", "do": "turn", "who": "man"},
+          {"word": "lunges", "do": "bite", "who": "man", "target": "rosa"},
+          {"word": "lunges", "do": "heat", "count": 4, "for": 2.0}
+        ]
+      }
+    },
+    {
+      "id": "07",
+      "narration": "Hale walks back in from the street and slams his fist on the counter. \"Where are the keys?\" he asks. My keys slip out of my hand and hit the floor. Tell me what I do. Open it, or wait?",
+      "clock": {"day": 0, "from": "19:01", "to": "19:01"},
+      "flat": {
+        "shot": "wide",
+        "set": "pharmacy",
+        "infected": 3,
+        "camera": {"zoom": [1.0, 1.18], "focus": ["center", "counter"]},
+        "actors": [
+          {"id": "hale", "at": "outside", "facing": "left", "expr": "alert"},
+          {"id": "sam", "at": "behind_counter", "facing": "right", "behind": true, "expr": "alert"}
+        ],
+        "events": [
+          {"word": "walks", "do": "walk", "who": "hale", "to": "counter"},
+          {"word": "slams", "do": "knock", "who": "hale", "on": "counter", "times": 3, "gap": 0.4},
+          {"word": "slams", "do": "expr", "who": "sam", "to": "scared", "offset": 0.3},
+          {"word": "where", "do": "talk", "who": "hale", "until_word": "keys"},
+          {"word": "slip", "do": "drop", "who": "sam"},
+          {"word": "tell", "do": "light", "state": "flicker"}
+        ]
+      }
+    }
+  ]
+}

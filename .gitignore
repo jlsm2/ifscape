@@ -1,0 +1,58 @@
+# Secrets: never committed
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated and heavy files (stay local)
+build/
+out/
+clips/
+refs/
+assets/*
+!assets/LICENSES.md
+musica/
+fonts/*.ttf
+fonts/*.otf
+tools/realesrgan/
+*.npy
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.png
+*.jpg
+*.blend
+*.blend1
+
+# Sounds: only the catalog is committed
+sfx/*
+!sfx/library.json
+
+# Video scripts: only the demos are committed
+scripts/*
+!scripts/stage-demo.json
+!scripts/stage-demo-b.json
+!scripts/flat2d-demo.json
+!scripts/moon-earth-gravity.json
+
+# Private notes, research, audits and channel data (local only)
+research/
+pesquisa/
+audit/
+audit2/
+hypit/
+CLAUDE.local.md
+
+# Local Claude Code config, disabled agents, third-party skills
+.claude/settings.local.json
+.claude/agents-backup-*/
+.claude/agents-disabled/
+.claude/provas/
+.claude/skills/agent-reach/
+.agents/
+skills-lock.json
+tools/stage/PRESET-PARK.md

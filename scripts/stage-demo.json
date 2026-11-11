@@ -1,0 +1,171 @@
+{
+  "slug": "stage-demo",
+  "channel": "ifscape",
+  "title": "Stage demo (stage builder test, do not publish)",
+  "style": "stylized low-poly 3D",
+  "description": "Internal demo of the data-driven stage builder (tools/stage). Not a channel video.",
+  "sources": [],
+  "hashtags": [],
+  "scenes": [
+    {
+      "id": "01",
+      "on_screen": "What if dinosaurs never died?",
+      "narration": "A tyrannosaur walks into a meadow.",
+      "prompt": "demo",
+      "min_seconds": 4.0,
+      "stamp": "NOW",
+      "stage": {
+        "set": "meadow",
+        "light": "noon",
+        "props": [
+          {
+            "id": "trex",
+            "name": "rex",
+            "at": [
+              0,
+              18
+            ],
+            "len": 12,
+            "action": "Idle"
+          },
+          {
+            "id": "man",
+            "name": "guy",
+            "at": [
+              1.5,
+              6
+            ],
+            "h": 1.75
+          }
+        ],
+        "camera": {
+          "preset": "dolly_in",
+          "at": [
+            0,
+            -2
+          ],
+          "look": "rex",
+          "dist": 5
+        },
+        "cues": [
+          {
+            "t": 2.0,
+            "do": "shake",
+            "amp": 0.1
+          }
+        ]
+      },
+      "panel_rows": [
+        [
+          "Dinosaurs alive",
+          "all"
+        ],
+        [
+          "Mammal size",
+          "mouse"
+        ]
+      ]
+    },
+    {
+      "id": "02",
+      "narration": "A herd of zebras crosses the dry plain.",
+      "prompt": "demo",
+      "min_seconds": 4.0,
+      "stage": {
+        "set": "savanna",
+        "light": "dry-noon",
+        "props": [
+          {
+            "id": "zebra",
+            "name": "herd",
+            "layout": "herd",
+            "n": 14,
+            "at": [
+              0,
+              30
+            ],
+            "spread": 12,
+            "to": [
+              -10,
+              30
+            ],
+            "len": 2.3
+          }
+        ],
+        "camera": {
+          "preset": "truck",
+          "at": [
+            0,
+            0
+          ],
+          "look": "herd0",
+          "dist": 8
+        }
+      },
+      "panel_rows": [
+        [
+          "Herds on the plain",
+          "14"
+        ],
+        [
+          "Predators",
+          "2",
+          0.4
+        ],
+        [
+          "Source",
+          "Demo",
+          0.7
+        ]
+      ]
+    },
+    {
+      "id": "03",
+      "narration": "A fox slips between the trees at dawn.",
+      "prompt": "demo",
+      "min_seconds": 4.0,
+      "stage": {
+        "set": "forest",
+        "light": "dawn",
+        "props": [
+          {
+            "id": "fox",
+            "name": "fox",
+            "at": [
+              3,
+              10
+            ],
+            "len": 0.9,
+            "path": [
+              [
+                3,
+                10
+              ],
+              [
+                -1,
+                6
+              ],
+              [
+                -3,
+                4
+              ]
+            ],
+            "speed": 1.5,
+            "action": "Walk"
+          }
+        ],
+        "camera": {
+          "preset": "pov",
+          "at": [
+            0,
+            0
+          ],
+          "look": "fox"
+        }
+      }
+    }
+  ],
+  "panel_style": "hud",
+  "panel_label": "TIME SINCE THE ASTEROID MISSED",
+  "master_lufs": false
+}

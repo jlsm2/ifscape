@@ -1,0 +1,200 @@
+{
+  "slug": "moon-earth-gravity",
+  "channel": "ifscape",
+  "title": "What if the Moon had Earth's gravity?",
+  "style": "stylized low-poly 3D animation, simple geometric shapes, flat matte colors, first-person POV at eye level, as if the viewer is standing in the scene, gentle handheld camera, simple low-poly people, deep navy night tones with warm amber light accents, soft lighting, vertical 9:16, no text, no logos, no flags, no watermarks",
+  "description": "What if the Moon pulled as hard as Earth? Monster tides, a double planet, and a Moon nobody could leave. Real science, imagined.",
+  "sources": [
+    {
+      "claim": "Moon: surface gravity 1.62 m/s2, radius 1,737 km, mass 0.0735e24 kg, escape velocity 2.38 km/s, mean distance 384,400 km",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "claim": "Earth: surface gravity 9.80 m/s2, mass 5.97e24 kg",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "claim": "Six times the mass (calculation): at the same radius, g scales with mass, so 9.80 / 1.62 = 6.05x the Moon's mass",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "claim": "Tide-generating force scales with the Moon's mass, so the lunar tide gets about 6x stronger (estimate; local tides vary)",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+    },
+    {
+      "claim": "Today the Earth-Moon barycenter sits about 4,700 km from Earth's center, inside the planet",
+      "url": "https://www.britannica.com/science/barycenter"
+    },
+    {
+      "claim": "New barycenter (calculation): 384,400 km x 0.444 / (5.972 + 0.444) = about 26,600 km from Earth's center, outside Earth (radius 6,371 km)",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "claim": "New escape velocity (calculation): 2.38 km/s x sqrt(6.05) = about 5.9 km/s, nearly 2.5x today and above Mars (5.03 km/s)",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "claim": "Apollo LM ascent engine: about 15,500 N of thrust",
+      "url": "https://apolloexplorer.co.uk/books/SP-4205/ch6-5.html"
+    },
+    {
+      "claim": "LM ascent stage fueled: about 4,800 kg (2,180 kg dry + 2,639 kg propellant); at 9.8 m/s2 it weighs about 47,000 N, three times the engine's thrust (calculation)",
+      "url": "https://www.spacefacts.de/mission/english/apollo-16.htm"
+    },
+    {
+      "claim": "SPECULATION: a Moon with escape velocity above Mars's could hold some gas; whether it would form an atmosphere is not established",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "claim": "Tides brake Earth's spin and lengthen the day; a heavier Moon brakes faster (qualitative)",
+      "url": "https://www.astronomy.com/science/ask-astro-how-quickly-is-the-moon-moving-away-from-earth/"
+    },
+    {
+      "claim": "Pluto and Charon are mutually tidally locked: the same faces always point at each other",
+      "url": "https://science.nasa.gov/dwarf-planets/pluto/moons/charon/"
+    }
+  ],
+  "hashtags": [
+    "#whatif",
+    "#science",
+    "#space",
+    "#moon",
+    "#ifscape"
+  ],
+  "motion_style": "stylized low-poly 3D animation, first-person POV at eye level",
+  "scenes": [
+    {
+      "id": "01",
+      "tool": "seedance",
+      "prompt": "Standing on a harbor wall at night looking down at the sea drained far out, little boats lying tilted on wet mud, a huge glowing full Moon ahead",
+      "motion": "slow handheld push forward toward the railing, moonlight glinting on the wet faceted mud, lamp lights flickering softly, tiny people on the harbor wall leaning over to look",
+      "narration": "",
+      "on_screen": "What if the Moon had Earth's gravity?",
+      "highlight": [
+        "GRAVITY"
+      ],
+      "min_seconds": 2.2
+    },
+    {
+      "id": "02",
+      "tool": "veo",
+      "prompt": "Walking along a quiet seaside promenade at night, a few people strolling ahead, looking up at an ordinary full Moon over calm dark water",
+      "motion": "slow walk forward along the promenade, people strolling ahead, gentle waves rolling in, moonlight shimmering on the water, camera tilting slightly up toward the Moon",
+      "narration": "Tonight, nothing looks different. Same Moon. Same size. Same glow.",
+      "stamp": null,
+      "highlight": [
+        "SAME"
+      ]
+    },
+    {
+      "id": "03",
+      "tool": "veo",
+      "prompt": "Looking into a backyard telescope eyepiece at night, the full Moon filling the view, craters as simple flat facets",
+      "motion": "very slow drift as the eye settles on the eyepiece, the faceted lunar surface sharpening into focus, faint shimmer of air",
+      "narration": "But to pull like Earth, something that small needs six times its mass.",
+      "highlight": [
+        "SIX"
+      ]
+    },
+    {
+      "id": "04",
+      "tool": "seedance",
+      "prompt": "Standing on a beach at dawn, the waterline retreated far out ahead, exposed seabed with rocks and seaweed, people walking out onto it",
+      "motion": "slow walk forward onto the wet exposed seabed, the last water draining away into the distance, people ahead walking out and pointing, puddles glinting",
+      "narration": "Six hours later, the sea pulls back. The Moon now tugs the oceans six times harder.",
+      "stamp": null,
+      "highlight": [
+        "HARDER"
+      ]
+    },
+    {
+      "id": "05",
+      "tool": "seedance",
+      "prompt": "Standing on the steps of a shop in a small coastal town, seawater flowing calmly into the street below, knee deep around parked cars",
+      "motion": "camera holds on the steps, then tilts down as seawater flows steadily up the street, rising around the car wheels, ripples spreading, shop lights reflecting on the water",
+      "narration": "Then the tide returns. Not up the beach. Into the streets. Twice a day.",
+      "highlight": [
+        "STREETS"
+      ]
+    },
+    {
+      "id": "06",
+      "tool": "veo",
+      "prompt": "Standing in a dim museum hall in front of a cutaway model of Earth, a small glowing amber point deep inside the planet",
+      "motion": "slow push in toward the cutaway Earth model, the amber point deep inside pulsing gently",
+      "narration": "Today, Earth and Moon circle a point inside our planet, 4,700 kilometers from its center.",
+      "stamp": null,
+      "highlight": [
+        "INSIDE"
+      ]
+    },
+    {
+      "id": "07",
+      "tool": "veo",
+      "prompt": "Earth and the Moon in space, both slowly circling an empty glowing point between them",
+      "style": "stylized low-poly 3D animation, simple geometric shapes, flat matte colors, deep navy space with warm amber light accents, simple stars, soft lighting, slow orbital camera, vertical 9:16, no text, no logos, no watermarks",
+      "motion": "Earth and Moon slowly orbit together around the glowing empty point between them, camera slowly circling the pair",
+      "motion_style": "stylized low-poly 3D animation, slow orbital camera",
+      "narration": "Now that point sits 26,000 kilometers out, in empty space. Earth swings around it every month. We're a double planet.",
+      "highlight": [
+        "DOUBLE"
+      ]
+    },
+    {
+      "id": "08",
+      "tool": "seedance",
+      "prompt": "Standing behind a fence across a field at night, a rocket on a launch pad ahead with floodlights and rising steam",
+      "motion": "steam billowing around the rocket, floodlights flaring, handheld camera behind the fence slowly tilting up to the top of the rocket",
+      "narration": "Going back there gets brutal. To escape the Moon, a rocket needs nearly two and a half times the speed.",
+      "stamp": null,
+      "highlight": [
+        "BRUTAL"
+      ]
+    },
+    {
+      "id": "09",
+      "tool": "seedance",
+      "prompt": "Standing in a quiet museum hall looking up at a gold-foil lunar lander model",
+      "motion": "slow tilt up the lander from its legs to its top, dust motes floating in the museum light",
+      "narration": "The lander that brought Apollo home? Its engine couldn't even lift its own weight.",
+      "highlight": [
+        "WEIGHT"
+      ]
+    },
+    {
+      "id": "10",
+      "tool": "seedance",
+      "prompt": "Standing on the lunar surface at sunrise, gray faceted plains and craters ahead, a thin faint blue haze along the horizon, Earth low in a black sky",
+      "motion": "slow walk forward across the faceted lunar plain, fine dust lifting at each step, the thin blue haze glowing on the horizon as the Sun rises",
+      "narration": "With that grip, the Moon could hold on to gas better than Mars. Maybe, one day, a thin sky.",
+      "stamp": null,
+      "highlight": [
+        "SKY"
+      ]
+    },
+    {
+      "id": "11",
+      "tool": "veo",
+      "prompt": "Earth seen from space with its night side facing away from a motionless Moon, city lights only on the far side",
+      "style": "stylized low-poly 3D animation, simple geometric shapes, flat matte colors, deep navy space with warm amber light accents, simple stars, soft lighting, slow orbital camera, vertical 9:16, no text, no logos, no watermarks",
+      "motion": "slow orbit around Earth with the Moon fixed in place, the line between day and night creeping across the planet",
+      "motion_style": "stylized low-poly 3D animation, slow orbital camera",
+      "narration": "Given time, tides lock Earth and Moon face to face, like Pluto and Charon. Half the world never sees it again.",
+      "stamp": null,
+      "highlight": [
+        "LOCK"
+      ]
+    },
+    {
+      "id": "12",
+      "tool": "veo",
+      "prompt": "Standing on the same seaside promenade from the opening at night, looking up at an ordinary full Moon over calm water",
+      "motion": "standing still on the promenade, a single person ahead stops and looks up at the Moon, gentle waves, camera slowly tilting up toward the Moon",
+      "narration": "And the strangest part? From your window, the Moon would look exactly the same. What should I imagine next?",
+      "stamp": null,
+      "highlight": [
+        "SAME"
+      ]
+    }
+  ]
+}

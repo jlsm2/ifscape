@@ -1,0 +1,152 @@
+{
+  "slug": "stage-demo-b",
+  "channel": "ifscape",
+  "title": "Stage demo B (continuous take, do not publish)",
+  "style": "stylized low-poly 3D",
+  "description": "Internal test: set same, camera path with prev, light and grow triggers.",
+  "sources": [],
+  "hashtags": [],
+  "scenes": [
+    {
+      "id": "01",
+      "on_screen": "What if dinosaurs never died?",
+      "narration": "A tyrannosaur walks through a young forest.",
+      "prompt": "demo",
+      "min_seconds": 6.0,
+      "stamp": "NOW",
+      "stage": {
+        "set": "meadow",
+        "light": "dawn",
+        "props": [
+          {
+            "id": "trex",
+            "name": "rex",
+            "at": [
+              0,
+              20
+            ],
+            "len": 12,
+            "action": "Idle"
+          },
+          {
+            "kind": "tree",
+            "name": "young",
+            "pack": "quaternius/stylized-nature",
+            "layout": "scatter",
+            "n": 14,
+            "area": [
+              0,
+              24,
+              14
+            ],
+            "h": [
+              8,
+              11
+            ]
+          }
+        ],
+        "camera": {
+          "preset": "path",
+          "path": [
+            {
+              "t": 0,
+              "at": [
+                -4,
+                0
+              ],
+              "look": "rex"
+            },
+            {
+              "t": 5.5,
+              "at": [
+                3,
+                4
+              ],
+              "look": "rex"
+            }
+          ]
+        },
+        "cues": [
+          {
+            "t": 0.5,
+            "do": "grow",
+            "target": "young",
+            "from": 0.3,
+            "size": 1.0,
+            "dur": 4,
+            "stagger": 1.5
+          },
+          {
+            "t": 0.5,
+            "do": "light",
+            "light": "noon",
+            "dur": 5
+          }
+        ]
+      },
+      "fact": {
+        "value": "66 million",
+        "text": "years ago an asteroid ended the age of the dinosaurs.",
+        "source": "NASA, 2023",
+        "t": 1.5,
+        "dur": 4
+      },
+      "text": [
+        "A tyrannosaur walks through a young forest."
+      ]
+    },
+    {
+      "id": "02",
+      "narration": "Centuries pass, and the forest keeps growing around it.",
+      "prompt": "demo",
+      "min_seconds": 6.0,
+      "stage": {
+        "set": "same",
+        "props": [
+          {
+            "id": "trex",
+            "name": "rex",
+            "at": [
+              0,
+              20
+            ],
+            "len": 12,
+            "action": "Idle"
+          }
+        ],
+        "camera": {
+          "preset": "path",
+          "path": [
+            {
+              "t": 0,
+              "prev": true
+            },
+            {
+              "t": 5.5,
+              "at": [
+                8,
+                8
+              ],
+              "look": "rex"
+            }
+          ]
+        },
+        "cues": [
+          {
+            "t": 0.5,
+            "do": "light",
+            "light": "dusk",
+            "dur": 5
+          }
+        ]
+      },
+      "text": [
+        "Centuries pass, and the forest keeps growing."
+      ]
+    }
+  ],
+  "panel_style": "hud",
+  "panel_label": "TIME SINCE THE ASTEROID MISSED",
+  "master_lufs": false,
+  "format": "text"
+}
